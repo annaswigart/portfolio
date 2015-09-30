@@ -1,0 +1,194 @@
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+hr {
+	height: 3px;
+	width: 80%;
+	float: right;
+}
+
+h1 {
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+h3 {
+	text-align: center;
+	font-size: 16pt;
+	color: #1e6c4b;
+}
+
+a {
+	text-decoration: none;
+	color: #1e6c4b;
+
+}
+
+h4 {
+	font-weight: 700;
+}
+
+a:hover {
+	border-bottom: 1px dotted #54098c;
+	text-decoration: none;
+	color: #54098c;
+}
+
+
+.logo {
+	margin-top: 10px;
+	width: 100px;
+	float: left;
+}
+
+.name-section {
+	float: right;
+}
+
+/*************/
+/*Cover image*/
+/*************/
+.cover-pic {
+	position: relative;
+}
+
+/*adapted from: http://webtuts.way2tutorial.com/awesome-animated-css3-image-hover-effects-text/*/
+.message-transition {
+	transition-duration: 0.5s; 			/* W3C */
+	-webkit-transition-duration: 0.5s;  /* Google Chrome/Safari Support */
+	-moz-transition-duration: 0.5s; 	/* Mozilla Firefox Support */
+	-o-transition-duration: 0.5s; 		/* Opera Support */
+	overflow: hidden;
+	height: 0;
+	margin-top: -20px;
+	position: absolute;
+}
+
+.cover-pic:hover .message-transition {
+	height: 20px;
+}
+
+.show-message {
+
+	font-size: 14px;
+	color: white;
+}
+
+.cover-pic:hover .show-message {
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	height: 20px;
+}
+
+.unsplash-source {
+	color: #fff;
+}
+
+.tagline {
+	font-weight: 700;
+	font-size: 20pt;
+}
+
+.hire-me-btn {
+	border-radius: 0;
+	min-width: 100px;
+	margin-top: 20px;
+}
+
+/***************/
+/*Featured Work*/
+/***************/
+.fw-row {
+	padding-top: 20px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.thumbnail {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 15px;
+	border-radius: 10px;
+	border-color: #065c37;
+}
+
+/* adapted from http://stackoverflow.com/questions/493296/css-display-an-image-resized-and-cropped */
+.crop {
+	width: 300px;
+	height: 200px;
+	overflow: hidden;
+}
+
+
+/********/
+/*Footer*/
+/********/
+footer {
+	height: 150px;
+	background-color: #dedede;
+}
+
+.icon-container {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	width: 80px;
+	height: 30px;
+}
+
+.linkedin-icon{
+	float: left;
+	height: 30px;
+}
+
+.github-icon {
+	float: right;
+	height: 30px;
+}
+
+.grow img{
+	-moz-transition:-moz-transform 0.3s ease-in;
+	-webkit-transition:-webkit-transform 0.3s ease-in;
+	-o-transition:-o-transform 0.3s ease-in;
+}
+.grow img:hover{
+	-moz-transform:scale(1.3);
+	-webkit-transform:scale(1.3);
+	-o-transform:scale(1.3);
+}
+
+.copyright {
+	color: #525252;
+	font-weight: 600;
+	margin-top: 25px;
+}
+
+/***************/
+/*Media queries*/
+/***************/
+@media screen and (max-width: 425px) {
+	.logo {
+		max-width: 50px;
+	}
+
+	.tagline {
+		font-size: 14pt;
+	}
+}
+
+@media screen and (min-width: 426px) and (max-width: 600px) {
+
+	.tagline {
+		font-size: 16pt;
+	}
+}
